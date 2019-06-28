@@ -1,0 +1,4 @@
+dependencies {
+    compile "org.mongodb:mongo-java-driver:${mongoDbVersion}"
+    implementation "org.springframework.boot:spring-boot-starter-web:${springBootVersion}"
+}

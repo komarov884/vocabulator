@@ -1,0 +1,26 @@
+ext {
+    springBootVersion = '2.1.6.RELEASE'
+    mongoDbVersion = '3.10.2'
+    jupiterVersion = '5.4.2'
+    lombokVersion = '1.18.8'
+}
+
+subprojects {
+    apply plugin: 'java'
+
+    group 'com.komarov884'
+    version '1.0-SNAPSHOT'
+
+    sourceCompatibility = JavaVersion.VERSION_12
+	targetCompatibility = JavaVersion.VERSION_12
+
+    repositories {
+        mavenCentral()
+    }
+
+    dependencies {
+        compile "org.projectlombok:lombok:${lombokVersion}"
+        testImplementation "org.junit.jupiter:junit-jupiter-api:${jupiterVersion}"
+        testRuntimeOnly "org.junit.jupiter:junit-jupiter-engine:${jupiterVersion}"
+    }
+}

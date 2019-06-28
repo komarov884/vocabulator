@@ -1,0 +1,5 @@
+rootProject.name = 'vocabulator'
+
+include 'vocabulator-api'
+include 'vocabulator-db'
+include 'vocabulator-impl'
