@@ -19,7 +19,8 @@ subprojects {
     }
 
     dependencies {
-        compile "org.projectlombok:lombok:${lombokVersion}"
+        compileOnly "org.projectlombok:lombok:${lombokVersion}"
+        annotationProcessor "org.projectlombok:lombok:${lombokVersion}"
         testImplementation "org.junit.jupiter:junit-jupiter-api:${jupiterVersion}"
         testRuntimeOnly "org.junit.jupiter:junit-jupiter-engine:${jupiterVersion}"
     }
