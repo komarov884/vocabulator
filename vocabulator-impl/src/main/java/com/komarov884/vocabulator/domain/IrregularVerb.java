@@ -12,7 +12,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
  * @author Vasilii_Komarov
  */
 @Data
-@Document
+@Document(collection = "irregularVerbs")
 @Accessors(chain = true)
 public class IrregularVerb {
 

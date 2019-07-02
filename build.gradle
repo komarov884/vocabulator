@@ -1,3 +1,7 @@
+plugins {
+    id 'org.springframework.boot' version '2.1.6.RELEASE'
+}
+
 ext {
     springBootVersion = '2.1.6.RELEASE'
     mongoDbVersion = '3.10.2'
@@ -7,21 +11,33 @@ ext {
 
 subprojects {
     apply plugin: 'java'
+    apply plugin: 'io.spring.dependency-management'
 
     group 'com.komarov884'
     version '1.0-SNAPSHOT'
-
+    
     sourceCompatibility = JavaVersion.VERSION_12
-	targetCompatibility = JavaVersion.VERSION_12
+    targetCompatibility = JavaVersion.VERSION_12
+
+    configurations {
+        compileOnly {
+            extendsFrom annotationProcessor
+        }
+    }
 
     repositories {
         mavenCentral()
     }
 
     dependencies {
+        // region utils
         compileOnly "org.projectlombok:lombok:${lombokVersion}"
         annotationProcessor "org.projectlombok:lombok:${lombokVersion}"
+        // endregion
+        
+        // region testing
         testImplementation "org.junit.jupiter:junit-jupiter-api:${jupiterVersion}"
         testRuntimeOnly "org.junit.jupiter:junit-jupiter-engine:${jupiterVersion}"
+        // endregion
     }
 }

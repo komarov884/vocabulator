@@ -1,5 +1,14 @@
 dependencies {
-    compile "org.mongodb:mongo-java-driver:${mongoDbVersion}"
+    // region komarov884
+    compile project(':vocabulator-db')
+    // endregion
+
+    // region spring-boot
     implementation "org.springframework.boot:spring-boot-starter-web:${springBootVersion}"
     implementation "org.springframework.boot:spring-boot-starter-data-mongodb:${springBootVersion}"
+    // endregion
+
+    // region mongo
+    compile "org.mongodb:mongo-java-driver:${mongoDbVersion}"
+    // endregion
 }

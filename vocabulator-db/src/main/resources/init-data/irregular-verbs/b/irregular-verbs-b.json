@@ -1,0 +1,22 @@
+[
+  {
+    "_class": "com.komarov884.vocabulator.domain.IrregularVerb",
+    "infinitive": "be",
+    "infinitiveTranscription": "[bi:]",
+    "pastSimple": "was,were",
+    "pastSimpleTranscription": "[wɒz],[wɜ:]",
+    "pastPrinciple": "been",
+    "pastPrincipleTranscription": "[bi:n]",
+    "meaning": "быть,находиться"
+  },
+  {
+    "_class": "com.komarov884.vocabulator.domain.IrregularVerb",
+    "infinitive": "beat",
+    "infinitiveTranscription": "[bi:t]",
+    "pastSimple": "beat",
+    "pastSimpleTranscription": "[bi:t]",
+    "pastPrinciple": "beaten",
+    "pastPrincipleTranscription": "[bi:tn]",
+    "meaning": "бить"
+  }
+]
