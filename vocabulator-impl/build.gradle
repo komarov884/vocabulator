@@ -1,5 +1,6 @@
 dependencies {
     // region komarov884
+    compile project(':vocabulator-api')
     compile project(':vocabulator-db')
     // endregion
 
