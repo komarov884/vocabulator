@@ -1,0 +1,16 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <title>Irregular verbs</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  </head>
+  <body>
+    <h2>Irregular verbs</h2>
+    <div><p>Meaning</p><p th:text="${verb.meaning}">${verb.meaning}</p></div>
+    <div><p>Infinitive</p><input th:value="${verb.infinitive}"></div>
+    <div><p>Past simple</p><input th:value="${verb.pastSimple}"></div>
+    <div><p>Past principle</p><input th:value="${verb.pastPrinciple}"></div>
+    <p>komarov884</p>
+  </body>
+</html>
