@@ -4,13 +4,17 @@
     <title>Irregular verbs</title>
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link th:href="@{css/styles.css}" rel="stylesheet"/>
+    <script src="js/irregular-verbs.js"></script>
   </head>
   <body>
     <h2>Irregular verbs</h2>
     <div><p>Meaning</p><p th:text="${verb.meaning}">${verb.meaning}</p></div>
-    <div><p>Infinitive</p><input th:value="${verb.infinitive}"></div>
-    <div><p>Past simple</p><input th:value="${verb.pastSimple}"></div>
-    <div><p>Past principle</p><input th:value="${verb.pastPrinciple}"></div>
+    <div><p>Infinitive</p><input id="inputInfinitive" th:value="${verb.infinitive}"></div>
+    <div><p>Past simple</p><input id="inputPastSimple" th:value="${verb.pastSimple}"></div>
+    <div><p>Past principle</p><input id="inputPastPrinciple" th:value="${verb.pastPrinciple}"></div>
     <p>komarov884</p>
+    <button id="check" onclick="check(inputInfinitive.value, inputInfinitive.value)">Check</button>
+    <div><p>Result</p><label id="result" th:text="${result}">${result}</label></div>
   </body>
 </html>

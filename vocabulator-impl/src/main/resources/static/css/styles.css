@@ -1,0 +1,64 @@
+h2 {
+    padding:20px 15px 0 15px;
+}
+
+div {
+    padding:15px;
+    display:flex;
+}
+
+button {
+    text-align:center;
+    padding:0 10px;
+    min-width:90px;
+    height:25px;
+    line-height:25px;
+}
+
+input {
+    padding:0 5px;
+    margin:0 0 0 5px;
+    width:100px;
+    height:25px;
+}
+
+textarea {
+    padding:5px;
+    width:500px;
+    height:55px;
+    resize:none;
+}
+
+label {
+    margin:0 0 0 20px;
+    min-width:50px;
+    text-align:right;
+    line-height:25px;
+}
+
+table {
+    margin:0 0 0 15px;
+    border:1px solid #000;
+    border-collapse: collapse
+}
+
+td {
+    padding:5px;
+    border:1px solid #000;
+    width:244px;
+}
+
+.response-title {
+    font-weight:bold;
+    padding:0 0 0 15px;
+    margin:0;
+}
+
+.hits-count label {
+    margin:0;
+}
+
+.hits-count div {
+    padding:0;
+    line-height:25px;
+}
