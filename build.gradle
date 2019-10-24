@@ -1,7 +1,10 @@
 plugins {
     id 'org.springframework.boot' version '2.1.6.RELEASE'
 }
-
+//TODO: move on Java 13
+//TODO: update dependencies
+//TODO: add Dockerfile
+//TODO: add tests
 ext {
     springBootVersion = '2.1.6.RELEASE'
     mongoDbVersion = '3.10.2'
