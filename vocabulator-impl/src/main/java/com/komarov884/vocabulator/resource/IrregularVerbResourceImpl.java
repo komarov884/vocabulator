@@ -3,6 +3,7 @@ package com.komarov884.vocabulator.resource;
 import com.komarov884.vocabulator.dto.IrregularVerbDto;
 import com.komarov884.vocabulator.service.IrregularVerbService;
 import lombok.RequiredArgsConstructor;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -15,9 +16,10 @@ import java.util.List;
  *
  * @author Vasilii_Komarov
  */
+@CrossOrigin //TODO: read about it
 @RequiredArgsConstructor
 @RestController
-@RequestMapping("api/irregular-verbs")
+@RequestMapping("api/v0.1/irregular-verbs")
 public class IrregularVerbResourceImpl implements IrregularVerbResource {
 
     private final IrregularVerbService service;
