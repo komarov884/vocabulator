@@ -12,7 +12,7 @@ import org.springframework.data.repository.init.Jackson2RepositoryPopulatorFacto
  *
  * @author Vasilii_Komarov
  */
-@Profile("initdata")
+@Profile("initdata") //TODO: Think out!
 @Configuration
 public class PopulatorConfig {
 

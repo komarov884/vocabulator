@@ -31,6 +31,12 @@ public class IrregularVerbResourceImpl implements IrregularVerbResource {
     }
 
     @Override
+    @GetMapping("/random") //TODO: Think about API, URL etc
+    public IrregularVerbDto findRandom() {
+        return service.findRandom();
+    }
+
+    @Override
     @GetMapping
     public List<IrregularVerbDto> findAll() {
         return service.findAll();

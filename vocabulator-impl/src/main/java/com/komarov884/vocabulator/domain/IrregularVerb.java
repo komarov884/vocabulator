@@ -12,9 +12,11 @@ import org.springframework.data.mongodb.core.mapping.Document;
  * @author Vasilii_Komarov
  */
 @Data
-@Document(collection = "irregularVerbs")
+@Document(collection = IrregularVerb.IRREGULAR_VERB_COLLECTION)
 @Accessors(chain = true)
 public class IrregularVerb {
+
+    public static final String IRREGULAR_VERB_COLLECTION = "irregularVerbs";
 
     @Id
     private ObjectId id;

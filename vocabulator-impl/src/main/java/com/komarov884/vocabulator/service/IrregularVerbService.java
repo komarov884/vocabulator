@@ -14,4 +14,6 @@ public interface IrregularVerbService {
     IrregularVerbDto findById(String id);
 
     List<IrregularVerbDto> findAll();
+
+    IrregularVerbDto findRandom();
 }
